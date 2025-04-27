@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Review Sentiment</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Movie Review Sentiment Analyzer</h1>
+        <form method="post">
+            <textarea name="review" placeholder="Enter your review here..."></textarea><br>
+            <button type="submit">Predict</button>
+        </form>
+        {% if sentiment %}
+            <div class="result">{{ sentiment }}</div>
+        {% endif %}
+    </div>
+</body>
+</html>
